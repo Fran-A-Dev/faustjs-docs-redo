@@ -1,3 +1,3 @@
-# faust-getting-started
+# faustjs.org (work in progress)
 
-Welcome to the Faust getting started example.
+Frontend for the [faustjs.org](https://faustjs.org/) website.
