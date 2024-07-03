@@ -8,11 +8,22 @@ export default function Page(props) {
     <>
       <SEO />
       <Header />
-      <div>This is the homepage</div>
+      <main>
+        <h1 className="text-6xl font-extrabold font-lora">
+          The Headless WordPress toolkit for Next.js
+        </h1>
+      </main>
       <br />
-      <Link href="/faust-we-made-contact">Post: Faust, We Made Contact</Link>
       <br />
-      <Link href="/reference-page">Page: Reference Page</Link>
+      <Link href="/faust-we-made-contact" className="underline">
+        Post: Faust, We Made Contact
+      </Link>
+      <br />
+      <Link href="/reference-page" className="underline">
+        Page: Reference Page
+      </Link>
+      <br />
+      <br />
       <Footer />
     </>
   );
