@@ -1,30 +1,22 @@
 import SEO from "../components/SEO";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Link from "next/link";
 
-export default function Page(props) {
+export default function HomePage() {
   return (
     <>
       <SEO />
-      <Header />
-      <main>
-        <h1 className="text-6xl font-extrabold font-lora">
-          The Headless WordPress toolkit for Next.js
-        </h1>
-      </main>
-      <br />
-      <br />
-      <Link href="/faust-we-made-contact" className="underline">
-        Post: Faust, We Made Contact
-      </Link>
-      <br />
-      <Link href="/reference-page" className="underline">
-        Page: Reference Page
-      </Link>
-      <br />
-      <br />
-      <Footer />
+      <h1 className="text-6xl font-extrabold font-lora mt-8 text-center">
+        The Headless WordPress toolkit for Next.js
+      </h1>
+      <div className="mt-8 text-center">
+        <Link href="/faust-we-made-contact">
+          <a className="underline">Post: Faust, We Made Contact</a>
+        </Link>
+        <br />
+        <Link href="/reference-page">
+          <a className="underline">Page: Reference Page</a>
+        </Link>
+      </div>
     </>
   );
 }

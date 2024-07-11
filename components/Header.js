@@ -1,20 +1,27 @@
+import Link from "next/link";
 import FaustLogo from "./FaustLogo";
 import PrimaryMenu from "./PrimaryMenu";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
   return (
-    <header className="flex px-4 py-6 border-2 border-gray-500 justify-between">
-      <div className="flex gap-5">
-        <div className="flex border-2 border-rose-500 items-center">
+    <header className="flex px-4 py-6 justify-between items-center">
+      <div className="flex gap-5 items-center">
+        <div className="flex items-center">
           <FaustLogo />
-          <h2>Faust.js&trade;</h2>
+          <Link href="/">
+            <a className="ml-2 text-xl font-bold">Faust.js&trade;</a>
+          </Link>
         </div>
-        <div className="flex border-2 border-green-500 items-center">
+        <div className="flex items-center">
           <PrimaryMenu />
         </div>
       </div>
-      <div className="flex gap-5 items-center border-2 border-blue-600">
-        <p>Other stuff</p>
+      <div className="flex gap-5 items-center">
+        <SearchBar />
+        <div className="flex gap-5 items-center">
+          <p>Other stuff - Deploy/Learn</p>
+        </div>
       </div>
     </header>
   );
